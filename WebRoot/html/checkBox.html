@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>复选框</title>
+<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+	
+$(function(){
+	
+	var oinput = document.getElementsByTagName("input")[0];
+	var $oinput = $(oinput);
+		
+		$oinput.click(function(){
+			
+			if($(this).attr("checked")){
+				
+				
+				//alert("已接受条款，可以注册!")
+				
+				
+			}
+			
+			
+			
+		});
+		
+		oinput = $("input")[0];
+		//oinput = $("input").get(0);
+		oinput.onclick=function(){
+			
+			if(this.checked){
+				
+				alert("已接受条款，可以注册!");
+				
+			}
+			
+			
+		}
+		
+	
+	
+	
+	
+	})
+
+
+
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+	<input type="checkbox" value="1"/>请先阅读<a href="javascript:"	>条款</a>并接受
+</body>
+</html>
