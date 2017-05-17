@@ -1,0 +1,82 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>问答效果</title>
+<script type="text/javascript"src="../js/jquery-3.2.1.min.js">
+</script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		
+		$("#1st").html("hello,JQuery!");
+		//alert("第一个JQuery")
+		$("a").click(function(){
+		
+		
+			$(this).css("background-color","greenyellow");
+			$("p").addClass("show").css("background-color","greenyellow");
+			
+		
+		
+		
+		})
+		
+		
+	});//文档准备完毕
+	
+
+
+</script>
+
+
+<style type="text/css" >
+	h2{
+	
+	
+		padding:5px;
+		
+		
+		}
+	p{
+	
+	
+		display:none;
+		
+		}
+	.show{
+		display:block;
+		
+		
+		
+		}
+
+
+
+</style>
+</head>
+<body>
+<div id="1st">
+</div>
+<a href="javascript:void(0);" title="点击查看答案">什么是受益人？</a>
+<p>
+	<strong>解答:</strong>
+	受益人是指人身报信中由被保险人或者投保人指定的
+	享有保险金请求权的人，投保人，被保险人可以为受益人
+	
+
+
+
+</p>
+
+
+
+
+
+
+
+</body>
+</html>
