@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>层选择器</title>
+<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		
+		$("h2").click(function(){
+			
+			
+			$("#menu span").css("background-color","yellowgreen");//子选择器，获取并设置#menu下的子元素<span>的背景颜色
+			$("h2+dl").css("background-color","#09F");
+			//相邻选择器，获取并设置紧接在<h2>元素后的<dl>元素的背景颜色
+			$("h2~dl").css("background-color","green");
+			//同辈选择器，获取并设置<h2>元素之后的所有同辈元素<dl>的背景颜色
+			
+			
+			
+			
+			
+			
+			
+		});
+		
+		
+		
+		
+		
+		
+		
+	});
+
+
+
+
+</script>
+<style type="text/css">
+	*{
+		margin:0px;
+		padding:0px;
+		line-height:30px;
+	}
+	
+	body{
+		margin:10px;
+		border:1px solid black;
+		width:200px;
+	
+	}
+	#menu{
+	
+		border:2px solid #03C;
+		padding:10px;
+	
+	
+	}
+	a{
+	
+		text-decoration:none;
+		margin-right:5px;
+		
+	
+	
+	}
+	
+	span{
+	
+		font-weight:bold;
+		padding:3px;
+		
+	
+	
+	
+	}
+	h2{
+		margin:10px;
+		cursor:pointer;
+	
+	
+	}
+
+
+
+</style>
+</head>
+<body>
+<div id="menu">
+	<h2 title="点击查看效果">全部旅游产品分类</h2>
+	<dl>
+		<dt>北京周边旅游<span>特价</span></dt>
+		<dd><a href="#">按天数</a><a href="#">海边旅游</a><a href="#">草原</a>
+		</dd>
+	
+	
+	
+	
+	
+	</dl>
+	
+	<dl>
+		<dt>景点门票</dt>
+		<dd><a href="#">名胜</a><a href="#">暑假</a><a href="#">乐园</a>
+		</dd>
+		<dd><a href="#">山水</a> <a href="#">双休</a></dd>	
+	</dl>
+	<span>更多分类</span>
+</div>
+</body>
+</html>
